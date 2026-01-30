@@ -18,7 +18,7 @@ O foco é aprender fazendo, evitando apenas copiar código e buscando entendimen
 - CSS3 (estilização, layouts responsivos, Flexbox)
 - JavaScript (lógica de programação e manipulação do DOM)
 
-##📂 Estrutura do repositório
+## 📂 Estrutura do repositório
 
 - /html → Fundamentos de HTML (estrutura, tags, semântica)
 - /css → Fundamentos de CSS (estilização e layout)

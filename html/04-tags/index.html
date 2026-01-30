@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Estrutura HTML</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="index.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="macaco.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function teste() {
+        const userName = document.getElementById("user");
+        console.log("Testando", userName.value);
+      }
+    </script>
+    <style>
+      .block {
+        display: block;
+      }
+      .inline-block {
+        display: inline-block;
+      }
+      .w-45 {
+        width: 45%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html"><h1>Homepage</h1></a>
+      <a href="./teste.html"><p>Teste</p></a>
+    </nav>
+    <h2>Heading 2</h2>
+    <h6>Heading 6</h6>
+    <div class="w-45 inline-block">
+      <input id="user" type="text" placeholder="Escreva seu nome" />
+      <br /><br />
+      <button onclick="teste()">Clicar</button>
+    </div>
+    <div class="inline-block">
+      <a
+        class="block"
+        href="https://www.linkedin.com/in/carlos-eduardo-de-paula-stachissini-a03669273/"
+        >Linkedin</a
+      >
+      <a href="./teste.html">Teste</a>
+    </div>
+  </body>
+</html>

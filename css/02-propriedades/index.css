@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background: #222;
+  color: #fff;
+}
+
+button {
+  width: 250px;
+  height: 70px;
+  border-radius: 16px;
+}
+
+.big {
+  font-size: 32px;
+}
+
+.small {
+  font-size: 16px;
+}

@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button__purple {
+  border: unset;
+  background: #5f11e2;
+  color: #fff;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+#paragrafo {
+  background: #f15234;
+  color: #fff;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+h1 {
+  color: red;
+}

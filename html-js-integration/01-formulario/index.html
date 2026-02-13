@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Formulário</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form onsubmit="login(event)">
+      <div>
+        <label for="name">Nome: </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Digite seu nome"
+          required
+        />
+      </div>
+      <div>
+        <label for="pass">Senha: </label>
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          placeholder="Digite sua senha"
+          required
+          minlength="6"
+        />
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </body>
+  <script>
+    const user = {
+      name: "Carlos",
+      pass: "123456",
+    };
+    // Conectar HTML e JS
+    function login(event) {
+      event.preventDefault();
+      console.log("Login");
+      // Pegar os dados do formulário
+      const formData = new FormData(event.target);
+      const name = formData.get("name");
+      const pass = formData.get("pass");
+      console.log(name, pass);
+
+      // Validar os dados
+      if (name === user.name && pass === user.pass) {
+        console.log("Usuário válido!");
+      } else {
+        console.log("Usuário inválido");
+      }
+    }
+  </script>
+</html>

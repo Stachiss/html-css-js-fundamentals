@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Lista Dinâmica</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form onsubmit="createUser(event)">
+      <div>
+        <label for="name">Nome: </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Digite seu nome"
+          required
+        />
+      </div>
+      <div>
+        <label for="age">Idade: </label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          placeholder="Digite sua idade"
+          required
+        />
+      </div>
+      <button type="submit">Criar Usuário</button>
+    </form>
+    <ul id="userlist"></ul>
+  </body>
+  <script src="./index.js"></script>
+</html>

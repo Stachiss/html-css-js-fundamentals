@@ -29,7 +29,7 @@ O foco é aprender fazendo, evitando apenas copiar código e buscando entendimen
 
 - `/html` → Fundamentos de HTML (estrutura, tags e semântica)  
 - `/css` → Fundamentos de CSS (estilização e layout)  
-- `/js` → Fundamentos de JavaScript (lógica e DOM)  
+- `/js` → Fundamentos de JavaScript (lógica)  
 
 ---
 

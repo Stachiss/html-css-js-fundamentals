@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Validação de Formulário</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form onsubmit="createUser(event)">
+      <div>
+        <label for="name">Nome: </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Digite seu nome"
+          required
+        />
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Digite seu email"
+          required
+        />
+      </div>
+      <div>
+        <label for="password">Senha: </label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Digite sua senha"
+          required
+        />
+      </div>
+      <div>
+        <label for="password-check">Confirmar senha: </label>
+        <input
+          type="password"
+          name="password-check"
+          id="password-check"
+          placeholder="Digite seu senha novamente"
+          required
+        />
+      </div>
+      <button type="submit">Criar Usuário</button>
+    </form>
+  </body>
+  <script src="./index.js"></script>
+</html>

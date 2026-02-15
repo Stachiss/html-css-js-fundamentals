@@ -1,0 +1,34 @@
+<html>
+  <p id="jogador"></p>
+  <p id="pc"></p>
+  <p id="resultado"></p>
+  <button id="pedra" onclick="jogar(0)">Pedra</button>
+  <button id="papel" onclick="jogar(1)">Papel</button>
+  <button id="tesoura" onclick="jogar(2)">Tesoura</button>
+  <script>
+    const tagJogador = document.getElementById("jogador");
+    const tagPc = document.getElementById("pc");
+    const tagResultado = document.getElementById("resultado");
+
+    const opcoes = ["Pedra", "Papel", "Tesoura"];
+
+    function jogar(escolha) {
+      const pc = Math.floor(Math.random() * 3);
+
+      tagJogador.textContent = `Jogador: ${opcoes[escolha]}`;
+      tagPc.textContent = `Pc: ${opcoes[pc]}`;
+
+      if (escolha === pc) {
+        tagResultado.textContent = "Você empatou";
+      } else if (
+        (escolha === 0 && pc === 2) ||
+        (escolha === 1 && pc === 0) ||
+        (escolha === 2 && pc === 1)
+      ) {
+        tagResultado.textContent = "Você ganhou";
+      } else {
+        tagResultado.textContent = "Você perdeu";
+      }
+    }
+  </script>
+</html>

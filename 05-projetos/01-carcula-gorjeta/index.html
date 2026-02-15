@@ -1,0 +1,34 @@
+<html>
+  <div>
+    <input
+      type="number"
+      name="valor"
+      id="valor"
+      value=""
+      placeholder="Insira o valor aqui"
+    />
+  </div>
+  <div>
+    <input
+      type="number"
+      name="porcentagem"
+      id="porcentagem"
+      value=""
+      placeholder="Digite a porcentagem aqui"
+    />
+  </div>
+  <button id="caculateTip" onClick="calcular()">Calcular Gorjeta</button>
+  <p id="gorjeta"></p>
+  <script>
+    const tagGorjeta = document.getElementById("gorjeta");
+
+    function calcular() {
+      const tagValor = Number(document.getElementById("valor").value);
+      const tagPorcentagem = Number(
+        document.getElementById("porcentagem").value,
+      );
+
+      tagGorjeta.textContent = `Gorjeta: R$ ${((tagValor / 100) * tagPorcentagem).toFixed(2)}`;
+    }
+  </script>
+</html>

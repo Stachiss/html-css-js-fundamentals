@@ -1,0 +1,37 @@
+<html>
+  <p id="nomesorteado"></p>
+  <button id="sortearbotao" onclick="sortear()">Sortear Nome</button>
+
+  <script>
+    const tagNomeSorteado = document.getElementById("nomesorteado");
+
+    const nomes = [
+      { nome: "julio", email: "julio@gmail.com" },
+      { nome: "maria", email: "maria@gmail.com" },
+      { nome: "carlos", email: "carlos@gmail.com" },
+      { nome: "ana", email: "ana@gmail.com" },
+      { nome: "paulo", email: "paulo@gmail.com" },
+      { nome: "lucia", email: "lucia@gmail.com" },
+      { nome: "roberto", email: "roberto@gmail.com" },
+      { nome: "julia", email: "julia@gmail.com" },
+      { nome: "fernando", email: "fernando@gmail.com" },
+      { nome: "leticia", email: "leticia@gmail.com" },
+      { nome: "rafael", email: "rafael@gmail.com" },
+      { nome: "patricia", email: "patricia@gmail.com" },
+      { nome: "joão", email: "joao@gmail.com" },
+      { nome: "bianca", email: "bianca@gmail.com" },
+      { nome: "andre", email: "andre@gmail.com" },
+      { nome: "gabriela", email: "gabriela@gmail.com" },
+      { nome: "rodrigo", email: "rodrigo@gmail.com" },
+      { nome: "mariana", email: "mariana@gmail.com" },
+      { nome: "bruno", email: "bruno@gmail.com" },
+      { nome: "flavia", email: "flavia@gmail.com" },
+    ];
+
+    function sortear() {
+      resultado = Math.floor(Math.random() * nomes.length);
+
+      tagNomeSorteado.textContent = nomes[resultado].nome;
+    }
+  </script>
+</html>

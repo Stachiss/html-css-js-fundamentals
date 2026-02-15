@@ -1,0 +1,12 @@
+<html>
+  <p id="moeda"></p>
+  <button id="lancarmoeda" onclick="lancar()">Lançar Moeda</button>
+  <script>
+    const tagMoeda = document.getElementById("moeda");
+
+    function lancar() {
+      tagMoeda.textContent =
+        Math.floor(Math.random() * 2) === 1 ? "Cara" : "Coroa";
+    }
+  </script>
+</html>
